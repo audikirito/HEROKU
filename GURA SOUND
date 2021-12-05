@@ -1,0 +1,219 @@
+// CONST AUDIO GURA
+gura1 = fs.readFileSync('./GURA/gura1.m4a')
+gura2 = fs.readFileSync('./GURA/gura2.m4a')
+gura3 = fs.readFileSync('./GURA/gura3.m4a')
+gura4 = fs.readFileSync('./GURA/gura4.m4a')
+gura5 = fs.readFileSync('./GURA/gura5.m4a')
+gura6 = fs.readFileSync('./GURA/gura6.m4a')
+gura7 = fs.readFileSync('./GURA/gura7.m4a')
+gura8 = fs.readFileSync('./GURA/gura8.m4a')
+gura9 = fs.readFileSync('./GURA/gura9.m4a')
+gura10 = fs.readFileSync('./GURA/gura10.m4a')
+gura11 = fs.readFileSync('./GURA/gura11.m4a')
+gura12 = fs.readFileSync('./GURA/gura12.m4a')
+gura13 = fs.readFileSync('./GURA/gura13.m4a')
+gura14 = fs.readFileSync('./GURA/gura14.m4a')
+gura15 = fs.readFileSync('./GURA/gura15.m4a')
+gura16 = fs.readFileSync('./GURA/gura16.m4a')
+gura17 = fs.readFileSync('./GURA/gura17.m4a')
+gura18 = fs.readFileSync('./GURA/gura18.m4a')
+gura19 = fs.readFileSync('./GURA/gura19.m4a')
+gura20 = fs.readFileSync('./GURA/gura20.m4a')
+gura22 = fs.readFileSync('./GURA/gura22.m4a')
+gura23 = fs.readFileSync('./GURA/gura23.m4a')
+gura24 = fs.readFileSync('./GURA/gura24.m4a')
+gura25 = fs.readFileSync('./GURA/gura25.m4a')
+gura26 = fs.readFileSync('./GURA/gura26.m4a')
+gura27 = fs.readFileSync('./GURA/gura27.m4a')
+gura28 = fs.readFileSync('./GURA/gura28.m4a')
+gura29 = fs.readFileSync('./GURA/gura29.m4a')
+gura30 = fs.readFileSync('./GURA/gura30.m4a')
+gura31 = fs.readFileSync('./GURA/gura31.m4a')
+gura32 = fs.readFileSync('./GURA/gura32.m4a')
+gura33 = fs.readFileSync('./GURA/gura33.m4a')
+gura34 = fs.readFileSync('./GURA/gura34.m4a')
+gura35 = fs.readFileSync('./GURA/gura35.m4a') 
+gura36 = fs.readFileSync('./GURA/gura36.m4a')
+gura37 = fs.readFileSync('./GURA/gura37.m4a')
+gura38 = fs.readFileSync('./GURA/gura38.m4a')
+gura39 = fs.readFileSync('./GURA/gura39.m4a')
+gura40 = fs.readFileSync('./GURA/gura40.m4a')
+gura41 = fs.readFileSync('./GURA/gura41.m4a')
+gura42 = fs.readFileSync('./GURA/gura42.m4a')
+gura43 = fs.readFileSync('./GURA/gura43.m4a')
+gura44 = fs.readFileSync('./GURA/gura44.m4a')
+gura45 = fs.readFileSync('./GURA/gura45.m4a')
+gura46 = fs.readFileSync('./GURA/gura46.m4a')
+gura47 = fs.readFileSync('./GURA/gura47.m4a')
+gura48 = fs.readFileSync('./GURA/gura48.m4a')
+gura49 = fs.readFileSync('./GURA/gura49.m4a')
+gura50 = fs.readFileSync('./GURA/gura50.m4a')
+gura51 = fs.readFileSync('./GURA/gura51.m4a')
+gura52 = fs.readFileSync('./GURA/gura52.m4a')
+gura53 = fs.readFileSync('./GURA/gura53.m4a')
+gura54 = fs.readFileSync('./GURA/gura54.m4a')
+
+//case gura voice
+            case 'gura1':
+            sendVn(gura1)
+            break   
+            case 'gura2':
+            sendVn(gura2)
+            break       
+            case 'gura3':
+            sendVn(gura3)
+            break       
+            case 'gura4':
+            sendVn(gura4)
+            break       
+            case 'gura5':
+            sendVn(gura5)
+            break       
+            case 'gura6':
+            sendVn(gura6)
+            break       
+            case 'gura7':
+            sendVn(gura7)
+            break       
+            case 'gura8':
+            sendVn(gura8)
+            break       
+            case 'gura9':
+            sendVn(gura9)
+            break       
+            case 'gura10':
+            sendVn(gura10)
+            break       
+            case 'gura11':
+            sendVn(gura11)
+            break       
+            case 'gura12':
+            sendVn(gura12)
+            break       
+            case 'gura13':
+            sendVn(gura13)
+            break       
+            case 'gura14':
+            sendVn(gura14)
+            break       
+            case 'gura15':
+            sendVn(gura15)
+            break       
+            case 'gura16':
+            sendVn(gura16)
+            break       
+            case 'gura17':
+            sendVn(gura17)
+            break       
+            case 'gura18':
+            sendVn(gura18)
+            break       
+            case 'gura19':
+            sendVn(gura19)
+            break  
+            case 'gura20':
+            sendgura(gura20)
+            break 
+            case 'gura21':
+            sendVn(gura21)
+            break   
+            case 'gura22':
+            sendVn(gura22)
+            break   
+            case 'gura23':
+            sendVn(gura23)
+            break   
+            case 'gura24':
+            sendVn(gura24)
+            break   
+            case 'gura25':
+            sendVn(gura25)
+            break   
+            case 'gura26':
+            sendVn(gura26)
+            break   
+            case 'gura27':
+            sendVn(gura27)
+            break   
+            case 'gura28':
+            sendVn(gura28)
+            break   
+            case 'gura29':
+            sendVn(gura29)
+            break   
+            case 'gura30':
+            sendVn(gura30)
+            break   
+            case 'gura31':
+            sendVn(gura31)
+            break   
+            case 'gura32':
+            sendVn(gura32)
+            break   
+            case 'gura33':
+            sendVn(gura33)
+            break   
+            case 'gura34':
+            sendVn(gura34)
+            break   
+            case 'gura35':
+            sendVn(gura35)
+            break               	
+            case 'gura36':
+            sendVn(gura36)
+            break       
+            case 'gura37':
+            sendVn(gura37)
+            break       
+            case 'gura38':
+            sendVn(gura38)
+            break       
+            case 'gura39':
+            sendVn(gura39)
+            break       
+            case 'gura40':
+            sendVn(gura40)
+            break       
+            case 'gura41':
+            sendVn(gura41)
+            break       
+            case 'gura42':
+            sendVn(gura42)
+            break       
+            case 'gura43':
+            sendVn(gura43)
+            break       
+            case 'gura44':
+            sendVn(gura44)
+            break       
+            case 'gura45':
+            sendVn(gura45)
+            break       
+            case 'gura46':
+            sendVn(gura46)
+            break       
+            case 'gura47':
+            sendVn(gura47)
+            break       
+            case 'gura48':
+            sendVn(gura48)
+            break       
+            case 'gura49':
+            sendVn(gura49)
+            break  
+            case 'gura50':
+            sendgura(gura50)
+            break 
+            case 'gura51':
+            sendVn(gura51)
+            break   
+            case 'gura52':
+            sendVn(gura52)
+            break   
+            case 'gura53':
+            sendVn(gura53)
+            break   
+            case 'gura54':
+            sendVn(gura54)
+            break
+//case fitnah
