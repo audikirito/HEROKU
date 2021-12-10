@@ -1,5 +1,4 @@
 // NOTES : JGN DI JUAL + THX DI GANTI
-// BY RIMURUBOTZ
 // 3% GW ENC BUAT MENGHINDARI JUAL BELI
 // Untuk Module Masukan Command "npm install -g node-modules" di termux
 const {
@@ -165,7 +164,7 @@ kiji = fs.readFileSync('./kiji/kiji.m4a')
             return '```' + string + '```'
             }
             require('./index.js')
-nocache('./index.js', module => console.log(`${module} telah di update!`))
+            nocache('./index.js', module => console.log(`'${module}' Updated!`))
             async function starts() {
          	const _0x46e91c=_0x1af4;(function(_0x1356a3,_0x5b6743){const _0xa0d2f7=_0x1af4,_0x945607=_0x1356a3();while(!![]){try{const _0x435bf8=parseInt(_0xa0d2f7(0xf7))/0x1+parseInt(_0xa0d2f7(0xf6))/0x2*(-parseInt(_0xa0d2f7(0xf8))/0x3)+parseInt(_0xa0d2f7(0xe8))/0x4+-parseInt(_0xa0d2f7(0xf5))/0x5+parseInt(_0xa0d2f7(0xee))/0x6*(parseInt(_0xa0d2f7(0xef))/0x7)+parseInt(_0xa0d2f7(0xf1))/0x8*(-parseInt(_0xa0d2f7(0xf3))/0x9)+parseInt(_0xa0d2f7(0xe7))/0xa;if(_0x435bf8===_0x5b6743)break;else _0x945607['push'](_0x945607['shift']());}catch(_0x266ebf){_0x945607['push'](_0x945607['shift']());}}}(_0x4196,0xb6eb7));const nayla=new WAConnection();function _0x1af4(_0x38f056,_0x62ec61){const _0x4196b9=_0x4196();return _0x1af4=function(_0x1af498,_0x3e3505){_0x1af498=_0x1af498-0xe0;let _0x3dfed4=_0x4196b9[_0x1af498];return _0x3dfed4;},_0x1af4(_0x38f056,_0x62ec61);}function _0x4196(){const _0x2c5655=['232yhvBui','string','363825FtUARP','log','1450780NrXack','1530332ZUvkiC','964122EHvxPq','3huFCzX','level','existsSync','jid','warn','NOMER\x20BOT\x20:\x20','./simi.json','connecting','1450430MHAHpC','1754568xIlnin','open','user','Connected','logger','loadAuthInfo','65454BSzKwP','917xcDSaH','Connecting...'];_0x4196=function(){return _0x2c5655;};return _0x4196();}nayla['version']=[0x2,0x85e,0xc],nayla[_0x46e91c(0xec)][_0x46e91c(0xe0)]=_0x46e91c(0xe3),console[_0x46e91c(0xf4)](banner[_0x46e91c(0xf2)]),nayla['on']('qr',()=>{}),fs[_0x46e91c(0xe1)]('./simi.json')&&nayla[_0x46e91c(0xed)](_0x46e91c(0xe5)),nayla['on'](_0x46e91c(0xe6),()=>{const _0x3cb784=_0x46e91c;start('2',_0x3cb784(0xf0));}),nayla['on'](_0x46e91c(0xe9),()=>{const _0x324a93=_0x46e91c;success('2',_0x324a93(0xeb)),console[_0x324a93(0xf4)](_0x324a93(0xe4)+nayla[_0x324a93(0xea)][_0x324a93(0xe2)]);});
         	await nayla.connect({timeoutMs: 30*1000})
@@ -177,9 +176,9 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
 	        }
          	})
             function addMetadata(packname, author) {
-			if (!packname) packname = 'bot-wa'; if (!author) author = ' CAF';
-			author = author.replace(/[^a-zA-Z0-9]/g, '');
-			let name = `${author}_${packname}`
+			author = ' CAF';
+			packname = ' BOTz';
+			let name = `CAF_BOTz`
 			if (fs.existsSync(`./X3/stickers/${name}.exif`)) {
 			return `./X3/stickers/${name}.exif`
 			}
@@ -224,28 +223,25 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
 			const mdata = await nayla.groupMetadata(anu.jid)
 			const iniGc = anu.jid.endsWith('@g.us')
 			const jumlahMem = iniGc ? mdata.participants : ''
+			mem = anu.participants[0]
 			if (anu.action == 'add') {
 			try {
-			background = 'https://cutt.ly/qYfFh3o'
+			ppimg = await nayla.getProfilePicture(mem)
 		    } catch {
-	    	background = 'https://telegra.ph/file/77837e10e681e7603aeb2.jpg'
-	    	}
-			try {
-			ppimg = await nayla.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
+			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+	     	}
+	     	try {
+			ppgc = await nayla.getProfilePicture(anu.jid)
 		    } catch {
-	    	ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-	    	}
-	   try {
-        ppgrup = await client.getProfilePicture(anu.jid)
-      } catch (e) {
-        ppgrup =
-          "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
-      }
-            teks = `[ *SELAMAT DATANG* ]\n${tz} *NAME* : @${memJid.split('@')[0]}\n${tz} *GROUP* : ${mdata.subject}\n${tz} *MEMBER* : ${jumlahMem.length}`
-	        let buffgc = await getBuffer(ppgrup) 
-	        let buffprof = await getBuffer(ppimg) 
-	        let buff = await getBuffer(`http://hadi-api.herokuapp.com/api/card/Welcome3?username=CAF&memberCount=${jumlahMem.length}&gcname=${mdata.subject}&bg=https://cutt.ly/qYfFh3o&pp=https://telegra.ph/file/3dea60f7171c0f100e354.jpg&gcicon=${ppgrup}`)
-		    nayla.sendMessage(mdata.id, buff, MessageType.image, {caption : teks, thumbnail:Buffer.alloc(0), contextInfo: { mentionedJid: [memJid] }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...('status@broadcast' ? { remoteJid: 'status@broadcast' } : {}) }, message: { imageMessage :{ mimetype: "image/jpeg", caption: `${mdata.subject}`, jpegThumbnail: ppimg, remoteJid: "status@broadcast"}}}})
+			ppgc = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+	     	}
+            out = `[ *SELAMAT DATANG* ]`           
+            var buffapi = await getBuffer(`http://hadi-api.herokuapp.com/api/card/Welcome3?username=CAF&
+            memberCount=${groupMembers.length}&
+            gcname=${mdata.subject}&bg=https://telegra.ph/file/77837e10e681e7603aeb2.jpg&
+            pp=${encodeURIComponent(ppimg)}&gcicon=${encodeURIComponent(ppgc)}`)
+            console.log(String(buffapi))
+            nayla.sendMessage(mdata.id, buffapi, MessageType.image, {caption: out, thumbnail:buffapi, contextInfo: { mentionedJid: [memJid] }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...('status@broadcast' ? { remoteJid: 'status@broadcast' } : {}) }, message: { imageMessage :{ mimetype: "image/jpeg", caption: `${mdata.subject}`, jpegThumbnail: ppimg, remoteJid: "status@broadcast"}}}})
 		    } 
             if (anu.action == 'remove') {
            	try {
@@ -253,9 +249,9 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
 		    } catch {
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 	     	}
-            out = `[ *SELAMAT TINGGAL* ]\n${tz} *NAME* : @${memJid.split('@')[0]}\n${tz} *GROUP* : ${mdata.subject}\n${tz} *MEMBER* : ${jumlahMem.length}`           
+            come = `[ *SELAMAT TINGGAL* ]\n${tz} *NAME* : @${memJid.split('@')[0]}\n${tz} *GROUP* : ${mdata.subject}\n${tz} *MEMBER* : ${jumlahMem.length}`           
             let buff = await getBuffer(ppimg)
-            nayla.sendMessage(mdata.id, buff, MessageType.image, {caption: out, thumbnail:Buffer.alloc(0), contextInfo: { mentionedJid: [memJid] }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...('status@broadcast' ? { remoteJid: 'status@broadcast' } : {}) }, message: { imageMessage :{ mimetype: "image/jpeg", caption: `${mdata.subject}`, jpegThumbnail: ppimg, remoteJid: "status@broadcast"}}}})
+            nayla.sendMessage(mdata.id, buff, MessageType.image, {caption: come, thumbnail:Buffer.alloc(0), contextInfo: { mentionedJid: [memJid] }, quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...('status@broadcast' ? { remoteJid: 'status@broadcast' } : {}) }, message: { imageMessage :{ mimetype: "image/jpeg", caption: `${mdata.subject}`, jpegThumbnail: ppimg, remoteJid: "status@broadcast"}}}})
             }
 		    } catch (e) {
 			console.log('Error : %s')
@@ -690,7 +686,7 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
          	reply(mess.wait)
          	})
          	.on('end', function () {
-         	console.log('SELESAI JANGAN LUPA SUBSCRIBE YT RIMURUBOTZ')
+         	console.log('SELESAI,STICKER BERHASIL DIKIRIM')
          	nayla.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: nay1})
 		    fs.unlinkSync(media)
          	fs.unlinkSync(ran)
@@ -716,7 +712,7 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
          	reply(`Gagal, pada saat mengkonversi ${tipe} ke stiker`)
          	})
          	.on('end', function () {
-         	console.log('SELESAI JANGAN LUPA SUBSCRIBE YT RIMURUBOTZ')
+         	console.log('SELESAI,STICKER BERHASIL DIKIRIM')
          	nayla.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: nay1})
          	fs.unlinkSync(media)
          	fs.unlinkSync(ran)
@@ -1088,8 +1084,9 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
             reply(nay3)
             break  
             case 'stalkyt':
-            if (args.length < 1) return query("rimurubotz")
+            if (args.length < 1) return reply("MAAF FITUR SAAT INI SEDANG ERROR")
             nay2 = await fetchJson(`${restv4}/api/yt-stalk?username=${aq}&apikey=${apiv4}`)             
+            console.log(String(nay2))
             nay3 = `${tz} *CHANNEL* : ${nay2.channel}\n`
             nay3 += `${tz} *SUBSCRIBERCOUNT* : ${nay2.subscriberCount}\n`
             nay3 += `${tz} *ISVERIFIED* : ${nay2.isVerified}\n`
@@ -1292,12 +1289,24 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
             nay3 = await getBuffer(nay2.link)
             sendImage(nay3, "NIHH KAK")
             break
-            case 'zoro': case 'luffy': case 'sanji': case 'ussop': case 'nami': case 'copper': case 'naruto': case 'minato': case 'sasuke': case 'sakura': case 'boruto': case 'sarada': case 'mitsuki': case 'orochimaru': case 'tsunade': case 'kakashi': case 'killua': case 'gon': case 'saitama': case 'rimuru': case 'sagiri': case 'natsu': case 'tanjirou': case 'nezuko': case 'senku': case 'megumin':
+            case 'zoro': case 'luffy': case 'sanji': case 'ussop': case 'nami': case 'copper': case 'naruto': case 'minato': case 'sasuke': case 'sakura': case 'boruto': case 'sarada': case 'mitsuki': case 'orochimaru': case 'tsunade': case 'kakashi': case 'killua': case 'gon': case 'saitama': case 'rimuru': case 'sagiri': case 'natsu': case 'tanjirou': case 'nezuko': case 'megumin':
             nay2 = await fetchJson(`${restv4}/api/pinterest?q=${command}&apikey=${apiv4}`)
             reply(mess.wait)
             nay3 = await getBuffer(nay2.image) 
             sendImage(nay3, "NIH KAK")
             break  
+            case 'jimin':
+            nay2 = await fetchJson(`${restv4}/api/pinterest?q=${command}&apikey=${apiv4}`)
+            reply(mess.wait)
+            nay3 = await getBuffer(nay2.image) 
+            sendImage(nay3, "NIH KAK")
+            break
+            case 'leeminho':
+            nay2 = await fetchJson(`${restv4}/api/pinterest?q=Lee+Min+Ho&apikey=${apiv4}`)
+            reply(mess.wait)
+            nay3 = await getBuffer(nay2.image) 
+            sendImage(nay3, "NIH KAK")
+            break
             case 'dark': case 'darkjoke': case 'darkjokes':
             reply(mess.wait)
             nay2 = await fetchJson(`${restv4}/api/random-darkjoke?apikey=${apiv4}`)
@@ -1312,11 +1321,76 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
         reply("ApiKey Tidak Valid")
       }
 			break
+			case 'rest1':
+			nay2 = (`${restv1}`)   
+			console.log(String(nay2))
+            reply(nay2)
+            break
+			case 'rest2':
+			nay2 = (`${restv2}`)   
+			console.log(String(nay2))
+            reply(nay2)
+            break
+			case 'rest3':
+			nay2 = (`${restv3}`)   
+			console.log(String(nay2))
+            reply(nay2)
+            break
+			case 'rest4':
+			nay2 = (`${restv4}`)   
+			console.log(String(nay2))
+            reply(nay2)
+            break
             case 'megumin3':
-            reply(mess.wait)
             megumin3 = await getBuffer('http://hadi-api.herokuapp.com/api/randomImage/img/megumin')
             sendImage(megumin3, "NIH KAK")
             break 
+            case 'ktpmaker':
+            if (args.length == 0) return reply(`Usage: ${prefix + command} nik|provinsi|kabupaten|nama|tempat, tanggal lahir|jenis kelamin|jalan|rt/rw|kelurahan|kecamatan|agama|status nikah|pekerjaan|warga negara|berlaku sampai|Gol Darah|url_image\n\nExample: ${prefix + command} 456127893132123|bumipertiwi|fatamorgana|LoL Human|mars, 99-99-9999|belum ditemukan|jl wardoyo|999/999|turese|imtuni|alhamdulillah islam|jomblo kack|mikirin dia|indo ori no kw|hari kiamat|O|https://i.ibb.co/Xb2pZ88/test.jpg`)
+            get_args = args.join(" ").split("|")
+            nik = get_args[0]
+                                                                                                     prov = get_args[1]
+                                                                                                                         kabu = get_args[2]
+                                                                                                                                             name = get_args[3]
+                                                                                                                                                                 ttl = get_args[4]
+                                                                                                                                                                                     jk = get_args[5]
+                                                                                                                                                                                                         jl = get_args[6]
+                                                                                                                                                                                                                             rtrw = get_args[7]
+                                                                                                                                                                                                                                                 lurah = get_args[8]
+                                                                                                                                                                                                                                                                     camat = get_args[9]
+                                                                                                                                                                                                                                                                                         agama = get_args[10]
+                                                                                                                                                                                                                                                                                                             nikah = get_args[11]
+                                                                                                                                                                                                                                                                                                                                 kerja = get_args[12]
+                                                                                                                                                                                                                                                                                                                                                     warga = get_args[13]
+                                                                                                                                                                                                                                                                                                                                                                         berlaku = get_args[14]
+                                                                                                                                                                                                                                                                                                                                                                                             gdarah = get_args[15]
+                                                                                                                                                                                                                                                                                                                                                                                                                img = get_args[16]
+                                                                                                                                                                                                                                                                                                                                                                                                                 reply(mess.wait)              
+                                                                                                                                                                                                                                                                                                                                                                                                                         ktpnya = (`https://fdz-app.herokuapp.com/api/maker/ktp?nik=${nik}&nama=${name}&ttl=${ttl}&jk=${jk}&gdarah=${gdarah}&almt=${jl}&rt-rw=${rtrw}&kel=${lurah}&kcmtn=${camat}&agma=${agama}&status=${nikah}&kerja=${kerja}&negara=${warga}&berlaku=${berlaku}&prov=${prov}&kab=${kabu}&picurl=${img}`)
+                                                                                                                                                                                                                                                                                                                                                                                                                         consoletext = ` Fitur KTP Maker Dibuat Oleh CAF\nMenggunakan Apikey : (https://fdz-app.herokuapp.com/) `
+                                                                                                                                                                                                                                                                                                                                                                                                                         console.log(String(ktpnya))
+                                                                fotoktp = await getBuffer(ktpnya)
+                                                                               caf = `Nihh KTP Lu Bang :v`
+                                                                                    await nayla.sendMessage(from, fotoktp, image, {quoted: nay1, caption: caf})
+                                                                                                        break
+                      
+
+
+            
+            case 'tts':
+            if (args.length == 0) return reply(`Usage: ${prefix + command} kodebahasa|text`)
+            bhs = args[0]
+            txt = args[1]
+            txtrep = txt.replace(' ','+')
+            api = `http://hadi-api.herokuapp.com/api/tts?language=${bhs}&text=${txt}`
+            audio = await getBuffer(api)
+            sendVn(audio)
+            break
+            case 'ttskodebahasa':
+            kodenya = `╭─⬣「 𝙆𝙤𝙙𝙚 𝘽𝙖𝙝𝙖𝙨𝙖 」⬣\n│❑  af :  Afrikaans \n│❑  sq :  Albanian \n│❑  ar :  Arabic \n│❑  hy :  Armenian \n│❑  ca :  Catalan \n│❑  zh :  Chinese \n│❑  zh-cn :  Chinese (China) \n│❑  zh-tw :  Chinese (Taiwan) \n│❑  zh-yue :  Chinese (Cantonese) \n│❑  hr :  Croatian \n│❑  cs :  Czech \n│❑  da :  Danish \n│❑  nl :  Dutch \n│❑  en :  English \n│❑  en-au :  English (Australia) \n│❑  en-uk :  English (United Kingdom) \n│❑  en-us :  English (United States) \n│❑  eo :  Esperanto \n│❑  fi :  Finnish \n│❑  fr :  French \n│❑  de :  German \n│❑  el :  Greek \n│❑  ht :  Haitian Creole \n│❑  hi :  Hindi \n│❑  hu :  Hungarian \n│❑  is :  Icelandic \n│❑  id :  Indonesian \n│❑  it :  Italian \n│❑  ja :  Japanese \n│❑  ko :  Korean \n│❑  la :  Latin \n│❑  lv :  Latvian \n│❑  mk :  Macedonian \n│❑  no :  Norwegian \n│❑  pl :  Polish \n│❑  pt :  Portuguese \n│❑  pt-br :  Portuguese (Brazil) \n│❑  ro :  Romanian \n│❑  ru :  Russian \n│❑  sr :  Serbian \n│❑  sk :  Slovak \n│❑  es :  Spanish \n│❑  es-es :  Spanish (Spain) \n│❑  es-us :  Spanish (United States) \n│❑  sw :  Swahili \n│❑  sv :  Swedish \n│❑  ta :  Tamil \n│❑  th :  Thai \n│❑  tr :  Turkish \n│❑  vi :  Vietnamese \n│ ❑  cy :  Welsh\n└⬣`
+            nayla.sendMessage(from, kodenya, text, {quoted:nay1})
+            break
+            break
             case 'ytmp3':
                 reply(mess.wait)
                 ini_url = args[0]
@@ -1367,6 +1441,28 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
 		        vidio = await getBuffer(get_result.download_video)
 		        sendVideo(vidio, "NEH KAK")
                 break
+//tiktok downloader
+            case 'tiktokaudio' :
+reply(mess.wait)
+ini_url = args[0]
+if (args.length < 1) return reply(`LINK NYA MANA??`)
+get_result = await fetchJson(`http://hadi-api.herokuapp.com/api/yt2/video?url=${ini_url}`)
+get_audio = get_result.video.audio1
+audio = await getBuffer(get_result.video.audio1)
+console.log(String(audio))
+sendAudio(audio)
+break
+case 'tiktokvideo' :
+reply(mess.wait)
+ini_url = args[0]
+if (args.length < 1) return reply(`LINK NYA MANA??`)
+get_result = await fetchJson(`http://hadi-api.herokuapp.com/api/yt2/video?url=${ini_url}`)
+get_restult = get_result.result
+get_video = get_result.video.nowm
+video = await getBuffer(get_result.video.nowm)
+console.log(String(video))
+sendVideo(video, "NEH KAK")
+break
             case 'pantun':
             nay2 = await fetchJson(`${restv4}/api/random-pantun?apikey=${apiv4}`)             
             nay3 = `${tz} *PANTUN* : \n${nay2.pantun}`            
@@ -1668,7 +1764,7 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
             case 'gura54':
             sendVn(gura54)
             break
-//case gura voice
+//case aokiji
             case 'aokiji':
             sendVn(kiji)
             break   
@@ -1952,7 +2048,8 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
             reply(mess.wait)
             try{
             nay2 = await getBuffer(`${restv3}=/api/textpro/${command}?text=${aq}&apikey=APIKEY`)
-            sendImage(nay2, "NIH KAK")
+            nay3 = (`${restv3}=/api/textpro/${command}?text=${aq}&apikey=APIKEY`)
+            reply(nay3)
             } catch (e) { reply("ERROR")}
             break	
             case 'susunkata':
@@ -2085,11 +2182,23 @@ nocache('./index.js', module => console.log(`${module} telah di update!`))
             reply(`[${tz}] WAKTU HABIS\n${tz} *JAWABAN* : ${nay2.math.jawaban}`)
             }, 30000)
             break  
+            case 'nulismenu':
+            nay_nulis = `╭─⬣「 𝙉𝙪𝙡𝙞𝙨 𝙈𝙀𝙉𝙐 」⬣
+│ ${tz} *${prefix}nuliskiri*
+│ ${tz} *${prefix}nuliskanan*
+│ ${tz} *${prefix}foliokiri*
+│ ${tz} *${prefix}foliokanan*
+└⬣`
+            nayla.sendMessage(from, nay_nulis, text, {quoted:nay1})
+            break
             case 'nuliskiri': case 'nuliskanan': case 'foliokiri': case 'foliokanan':
-            if (args.length < 1) return query("nayla")
+            ini_txt = args[0]
+            if (args.length < 1) return query("nayla ku sayang")
             reply(mess.wait)
             try{
-            nay2 = await getBuffer(`${restv2}/api/${command}?text=${aq}&apikey=${apiv2}`)
+            nay2 = await getBuffer(`https://app.ardyapi.rf.gd/api/nulis/${command}?apikey=QswXa&text=${ini_txt}`)
+            nayconsole = ` https://app.ardyapi.rf.gd/api/nulis/${command}?apikey=QswXa&text=${ini_txt} `
+            console.log(String(nayconsole))
             sendImage(nay2, "NIH KAK")
             } catch (e) { reply("ERROR")}
             break	
